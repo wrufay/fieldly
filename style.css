@@ -58,8 +58,7 @@ input {
 .flashcard:hover {
   transform: scale(1.03, 1.03);
 }
-.card-body {
-}
+
 .card-content {
   background-color: #fff;
   padding: 5px;
