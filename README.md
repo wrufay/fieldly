@@ -15,7 +15,7 @@ a web app that not only solves magnetic field problems but helps you visualize t
 
 3. select the magnetic field **direction** (into the page or out of the page)
 4. see result - with an animation of the object and the direction it would move in the field.
-5. click the main card to reset and enter another object.
+5. click the main card to reset and enter another object :)
 
 **tech**
 
@@ -27,10 +27,12 @@ a web app that not only solves magnetic field problems but helps you visualize t
 - warns when a object will not speed up in a potential difference, aka when the signs of the magnetic field and object are the same.
 - clean ui design including background images of x's and dots to display direction of magnetic field
 
-* i would love suggestions! **let me know: f26wu@uwaterloo.ca**
+i would love suggestions! **let me know: f26wu@uwaterloo.ca**
 
 **todo**
 
 - add randomizer feature, taking common scenarios and showing how it would behave (further visualizing)
 - make ion move proportionally (accurate)
 - graph this or something numerical (more features)
+
+originally a Pen from codepen. https://codepen.io/poha/pen/mybWYaY?editors=1010

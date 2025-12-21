@@ -1,25 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;400");
 
+html {
+  min-height: 100%;
+  background: linear-gradient(-45deg, #ebf1fb, #dae7f5, #cfe1f3, #ebf1fb);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+  background-attachment: fixed;
+}
+
 body {
   font-family: "M PLUS Rounded 1c", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  background-color: #ebf1fb;
+  background: transparent;
   color: #173d6a;
-  /* 	background-image: 
-        repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1) 2px, transparent 2px, transparent 30px),
-        repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1) 2px, transparent 2px, transparent 30px);
-    background-size:90px 30px; */
-  /* 	background-image: radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 8px);
-    background-size: 50px 50px;  */
-
-  /* 	 background-image: 
-    repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1) 4px, transparent 4px, transparent 90px),
-    repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1) 4px, transparent 4px, transparent 80px);
-  background-size: 70px 115px;  */
+  position: relative;
 }
 
 button,
@@ -42,6 +42,7 @@ h1 {
   color: #7b8ba4;
   font-size: 1.6rem;
   margin-bottom: 1rem;
+  animation: fadeInDown 0.8s ease-out;
 }
 input {
   float: right;
@@ -56,6 +57,7 @@ input {
   padding: 3rem;
   cursor: pointer;
   transition: all 0.5s ease;
+  animation: fadeInUp 1s ease-out 0.2s backwards;
 }
 .flashcard:hover {
   transform: scale(1.03, 1.03);
@@ -96,6 +98,7 @@ input {
   color: #7b8ba4;
   width: 10rem;
   resize: none;
+  animation: fadeIn 1s ease-out 0.5s backwards;
 }
 ::placeholder {
   color: #7b8ba4;
@@ -105,6 +108,7 @@ p {
 }
 #label {
   margin-right: 10px;
+  animation: fadeIn 1s ease-out 0.7s backwards;
 }
 #add-btn {
   background: #7b8ba4;
@@ -124,6 +128,7 @@ p {
 #delete-btn {
   background: #173d6a;
   border: none;
+  border-radius: 0;
   height: 100%;
   color: #ebf1fb;
   width: 10rem;
@@ -137,6 +142,7 @@ p {
 .button-container {
   margin-top: 3rem;
   height: 2rem;
+  animation: fadeInUp 1s ease-out 0.6s backwards;
 }
 
 #add-btn:hover {
@@ -155,6 +161,7 @@ label {
 .container {
   margin-top: 2rem;
   height: 7rem;
+  animation: fadeInUp 1s ease-out 0.4s backwards;
   /*   background: red; */
 }
 .container-all {
@@ -191,4 +198,66 @@ label {
   100% {
     transform: rotate(-180deg) translateY(200px) rotate(180deg);
   }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.2);
+  }
+}
+
+.dot {
+  display: inline-block;
+}
+
+.dots {
+  display: inline-block;
 }
