@@ -20,13 +20,13 @@ const OUT = $("#next-btn");
 
 const ENTER = $("#add-btn");
 
-let q = 0;
-let V = 0;
-let m = 0;
-let B = 0;
+let q = 0; // charge of object
+let V = 0; // potential difference
+let m = 0; // mass of oject
+let B = 0; // mag. field strength
 
-let r = 0;
-let v = 0;
+let r = 0; // radius
+let v = 0; // velocity
 
 let direction = "";
 let dir_force = "";
