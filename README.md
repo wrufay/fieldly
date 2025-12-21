@@ -1,4 +1,4 @@
-# ever wondered how an object would behave when place in a particular magnetic field?
+# ever wondered how an object would behave when placed in a particular magnetic field?
 
 **or maybe you just need to solve a homework problem for physics...**
 
