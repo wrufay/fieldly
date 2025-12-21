@@ -120,9 +120,9 @@ IN.addEventListener("click", (event) => {
   direction = "Into the page";
   IN.style.background = "#97AFD1";
   OUT.style.background = "#173D6A";
-  document.body.style.backgroundImage =
-    "repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.05) 0, rgba(0, 0, 0, 0.05) 8px, transparent 8px, transparent 90px), repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.05) 0, rgba(0, 0, 0, 0.05) 8px, transparent 8px, transparent 80px)";
-  document.body.style.backgroundSize = "70px 115px";
+  const svg = `data:image/svg+xml,%3Csvg width='80' height='80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 30 30 L 50 50 M 50 30 L 30 50' stroke='rgba(0,0,0,0.15)' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E`;
+  document.body.style.backgroundImage = `url("${svg}")`;
+  document.body.style.backgroundSize = "80px 80px";
 });
 
 OUT.addEventListener("click", (event) => {
@@ -130,8 +130,8 @@ OUT.addEventListener("click", (event) => {
   OUT.style.background = "#97AFD1";
   IN.style.background = "#173D6A";
   document.body.style.backgroundImage =
-    "radial-gradient(circle, rgba(0, 0, 0, 0.1) 5px, transparent 15px";
-  document.body.style.backgroundSize = "100px 100px";
+    "radial-gradient(circle, rgba(0, 0, 0, 0.15) 3px, transparent 3px";
+  document.body.style.backgroundSize = "80px 80px";
 });
 
 CARD.addEventListener("click", reset);
