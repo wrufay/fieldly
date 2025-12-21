@@ -1,13 +1,11 @@
 # ever wondered how an object would behave when placed in a particular magnetic field?
 
-**or maybe you just need to solve a homework problem for physics...**
-
-either way, **fieldly helps you with that.**
--> a web app that not only solves magnetic field problems but helps you visualize them.
+**fieldly helps you with that.**
+a web app that not only solves magnetic field problems but helps you visualize them.
 
 **how to use**
 
-1. go to fieldly.netlify.app
+1. go to [fieldly.netlify.app](https://fieldly.netlify.app/)
 2. input all the required parameters, including
 
 - **mass** of the object (m, in kg)
@@ -21,7 +19,7 @@ either way, **fieldly helps you with that.**
 
 **tech**
 
-- html, css, javascript + sweetalert plugin for warnings
+- html, css, javascript
 
 **features**
 
@@ -29,10 +27,10 @@ either way, **fieldly helps you with that.**
 - warns when a object will not speed up in a potential difference, aka when the signs of the magnetic field and object are the same.
 - clean ui design including background images of x's and dots to display direction of magnetic field
 
+* i would love suggestions! **let me know: f26wu@uwaterloo.ca**
+
 **todo**
 
 - add randomizer feature, taking common scenarios and showing how it would behave (further visualizing)
 - make ion move proportionally (accurate)
 - graph this or something numerical (more features)
-
--> i would love suggestions! **let me know: f26wu@uwaterloo.ca**
