@@ -116,7 +116,7 @@ ENTER.addEventListener("click", (event) => {
   }
 });
 
-IN.addEventListener("click", (event) => {
+IN.addEventListener("click", () => {
   direction = "Into the page";
   IN.style.background = "#97AFD1";
   OUT.style.background = "#173D6A";
@@ -125,7 +125,7 @@ IN.addEventListener("click", (event) => {
   document.body.style.backgroundSize = "80px 80px";
 });
 
-OUT.addEventListener("click", (event) => {
+OUT.addEventListener("click", () => {
   direction = "Out of the page";
   OUT.style.background = "#97AFD1";
   IN.style.background = "#173D6A";
@@ -138,10 +138,7 @@ CARD.addEventListener("click", reset);
 
 /*
 
-
 Testing
-
-
 1.6726e-27
 1.6e-19
 -5e6
