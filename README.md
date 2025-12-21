@@ -1,7 +1,9 @@
-# ever wondered how an object would behave when place in a particular magnetic field? or maybe you just need to solve a homework problem for physics...✌️
+# ever wondered how an object would behave when place in a particular magnetic field?
 
-**fieldly helps you with that.**
-a web app that not only solves magnetic field problems but helps you visualize them.
+**or maybe you just need to solve a homework problem for physics...**
+
+either way, **fieldly helps you with that.**
+-> a web app that not only solves magnetic field problems but helps you visualize them.
 
 **how to use**
 
@@ -32,3 +34,5 @@ a web app that not only solves magnetic field problems but helps you visualize t
 - add randomizer feature, taking common scenarios and showing how it would behave (further visualizing)
 - make ion move proportionally (accurate)
 - graph this or something numerical (more features)
+
+-> i would love suggestions! **let me know: f26wu@uwaterloo.ca**
